@@ -28,7 +28,19 @@ The goal is to show how we can **secure visual data** and still use **AI** to ex
 
 ---
 
-## 🔐 Part 1: AES Image Encryption & Decryption
+## 💡 Features
+
+🔒 Image Encryption/Decryption using AES (Advanced Encryption Standard)
+
+🤖 AI Image Classification using MobileNetV2
+
+📂 Entire flow is handled in one notebook (no separate .py files)
+
+🔍 View top 3 predictions after decryption
+
+---
+
+## 🔐 AES Image Encryption & Decryption
 
 ### ✅ Steps Performed:
 - Import AES and Padding modules from PyCryptodome
@@ -43,7 +55,7 @@ AES is a symmetric encryption algorithm widely used for data security. It encryp
 
 ---
 
-## 🧠 Part 2: Image Classification with MobileNetV2
+## 🧠  Image Classification with MobileNetV2
 
 ### ✅ Steps Performed:
 - Load the decrypted image
@@ -52,34 +64,38 @@ AES is a symmetric encryption algorithm widely used for data security. It encryp
 - Predict the top 3 classes from ImageNet
 - Print class names and confidence scores
 
-### 🔍 Output Example:
+---
+
+## 🔄 Workflow Steps
+
+📤 Encrypt the Image (Nature.jpg) ➝ saved as encrypted_Nature.aes
+
+📥 Decrypt the Image ➝ saved as decrypted_Nature.jpg
+
+🧠 Classify using AI (MobileNetV2) ➝ shows top-3 predictions
+
+---
+## 🖼️ Sample Output
+
+✅ Nature.jpg encrypted and saved as 'encrypted_Nature.aes'
+✅ Image decrypted and saved as 'decrypted_Nature.jpg'
 🔍 Top Predictions:
 👉 bannister (33.53%)
 👉 worm_fence (12.97%)
 👉 valley (10.34%)
 
-yaml
-Copy
-Edit
 
 ---
 
 ## 🚀 How to Run
 
 ### 1️⃣ Install Requirements
-```bash
+`
 pip install pycryptodome tensorflow opencv-python
-2️⃣ Run Encryption/Decryption
-bash
-Copy
-Edit
-python encryption_decryption.py
-3️⃣ Run Image Classification
-bash
-Copy
-Edit
-python classification.py
-✅ Final Output
+
+
+## ✅ Final Output
+
 Encrypted and secured image file
 
 Decrypted image for AI analysis
@@ -87,10 +103,18 @@ Decrypted image for AI analysis
 Classification results from the MobileNetV2 model
 
 
+---
+
 📃 License
 This project is open-source and free to use under the MIT License.
 
+---
 
+## 🏆 Project Purpose
+
+This project is developed for demonstrating the power of combining encryption + AI for digital image security.
+
+---
 
 
 
